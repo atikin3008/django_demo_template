@@ -40,6 +40,7 @@ pipeline {
         stage("get") {
             steps {
                 sh 'mkdir nikitaKomkov'
+                sh 'cd nikitaKomkov'
                 sh 'wget https://github.com/atikin3008/django_demo_template/blob/main/docker-compose.yaml'
                 sh 'docker compose -f docker-compose.yaml pull'
                 sh 'docker compose -f docker-compose.yaml up -d'
