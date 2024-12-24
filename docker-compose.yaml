@@ -1,0 +1,7 @@
+version: '3.8'
+
+services:
+  webapp:
+    image: atikin1/django_demo:latest
+    ports:
+      - "8093:80"
